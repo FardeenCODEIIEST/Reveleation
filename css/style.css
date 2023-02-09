@@ -34,6 +34,7 @@ a:focus {
   text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
     0px 0px 20px #b393d3;
   letter-spacing: 4px;
+  display: inline-block;
 }
 p {
   padding: 0;
@@ -165,6 +166,11 @@ h6 {
   z-index: 997;
 }
 
+#MYWAY {
+  position: fixed;
+  left: 50px;
+}
+
 #header.header-scrolled,
 #header.header-fixed {
   background: rgba(6, 12, 34, 0.98);
@@ -195,8 +201,29 @@ h6 {
 
 #header #logo img {
   padding: 0;
-  margin: 0;
-  max-height: 40px;
+  margin-top: -99px;
+  max-height: 271px;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+  height: 250px;
+  margin-bottom: -95px;
+  display: inline-block;
+  margin-right: 92px;
+  /* margin-right: 0px; */
+}
+
+@media (max-width: 460px) {
+  img {
+    margin-right: -16px;
+  }
+}
+@media (max-width: 1000px) {
+  img {
+    margin-right: -27px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -496,7 +523,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
-
+.logo1 {
+  display: inline-block;
+  margin-right: 40px;
+  margin-bottom: 8px;
+  top: 0;
+}
 #intro {
   width: 100%;
   height: 100vh;
